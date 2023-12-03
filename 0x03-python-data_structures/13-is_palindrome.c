@@ -1,31 +1,23 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
- * reversed - return reversed linked list
+ * reverse_list - reverse linked list
  * @head: pointer to linked lisr=t
  * Return: reversed linked list
  */
-listint_t *reversed(listint_t *head)
+listint_t *reverse_list(listint_t *head)
 {
-	listint_t *prev = NULL, *rev;
+	listint_t *prev = NULL, *curr = head, *next;
 
-	while (head)
+	while (curr)
 	{
-		rev = malloc(sizeof(listint_t));
-		if (rev == NULL)
-		{
-			free_listint(rev);
-			return (NULL);
-		}
-
-		rev->n = head->n;
-		rev->next = prev;
-		head = head->next;
-		prev = rev;
+		next = curr->next;
+		curr->next = prev;
+		prev = curr;
+		curr = next;
 	}
-	return (rev);
-}
+	return prev;
+}	
 
 /**
  * is_palindrome - checks if a linked list is a palindrome
@@ -45,21 +37,14 @@ int is_palindrome(listint_t **head)
 		fast = fast->next->next;
 	}
 
-	fast = reversed(slow->next);
-	if (fast == NULL)
-		return (-1);
-
+	fast = reverse_list(slow->next);
 	slow = *head;
 	while (fast)
 	{
 		if (fast->n != slow->n)
-		{
-			free_listint(fast);
 			return (0);
-		}
 		slow = slow->next;
 		fast = fast->next;
 	}
-	free_listint(fast);
 	return (1);
 }
