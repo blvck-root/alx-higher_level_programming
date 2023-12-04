@@ -16,8 +16,8 @@ listint_t *reverse_list(listint_t *head)
 		prev = curr;
 		curr = next;
 	}
-	return prev;
-}	
+	return (prev);
+}
 
 /**
  * is_palindrome - checks if a linked list is a palindrome
