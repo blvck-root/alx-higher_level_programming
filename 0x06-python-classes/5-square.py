@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a method to print a square with #"""
 
+
 class Square:
     """Square class"""
     def __init__(self, size=0):

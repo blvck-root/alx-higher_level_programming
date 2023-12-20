@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a square with position coordinates."""
 
+
 class Square:
     """Square class"""
     def __init__(self, size=0, position=(0, 0)):

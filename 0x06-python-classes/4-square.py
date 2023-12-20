@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a getter and setter for a size."""
 
+
 class Square:
     """Square class"""
     def __init__(self, size=0):
