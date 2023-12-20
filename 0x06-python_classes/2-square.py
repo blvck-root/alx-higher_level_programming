@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Define and validate a size for square."""
+
 class Square:
     """Square class"""
     def __init__(self, size=0):
