@@ -11,8 +11,8 @@ class Square:
             size (int, optional): length of the side of the square
             position (:obj: `tuple` of :obj: int, optional): square position
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -34,10 +34,11 @@ class Square:
 
     @position.setter
     def position(self, value):
+        print(type(value) is not tuple)
         if (type(value) is not tuple
-                and len(value) != 2
-                and type(value[0]) is not int
-                and type(value[1]) is not int):
+                or len(value) != 2
+                or type(value[0]) is not int
+                or type(value[1]) is not int):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
