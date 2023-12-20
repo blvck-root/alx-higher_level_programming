@@ -34,7 +34,6 @@ class Square:
 
     @position.setter
     def position(self, value):
-        print(type(value) is not tuple)
         if (type(value) is not tuple
                 or len(value) != 2
                 or type(value[0]) is not int
