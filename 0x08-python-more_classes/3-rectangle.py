@@ -9,11 +9,11 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """__init__ method.
-        
+
         Args:
             width (optional): width of a rectangle
             height (optional): height of a rectangle
-	"""
+        """
         self.width = width
         self.height = height
 
