@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The 1-rectangle module contains a Rectangle class.
+The 2-rectangle module contains a Rectangle class.
 """
 
 
@@ -44,3 +44,9 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
