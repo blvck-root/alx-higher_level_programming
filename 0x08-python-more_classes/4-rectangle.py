@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The 3-rectangle module contains a Rectangle class.
+The 4-rectangle module contains a Rectangle class.
 """
 
 
@@ -59,3 +59,7 @@ class Rectangle:
             return ""
         string = ("#"*self.width + "\n") * self.height
         return string[:-1]
+
+    def __repr__(self):
+        """Return string representation of a rectangle."""
+        return f"Rectangle({self.width}, {self.height})"
