@@ -39,11 +39,9 @@ def print_square(size):
     if size < 0:
         raise ValueError("size must be >= 0")
 
-    if size == 0:
-        print("")
-    else:
-        # square is a (size x size) grid made from the # character
-        square = ""
-        for i in range(size):
-            square += "#" * size + "\n"
+    # square is a (size x size) grid made from the # character
+    square = ""
+    for i in range(size):
+        square += "#" * size + "\n"
+    if len(square) > 0:
         print(square, end="")
