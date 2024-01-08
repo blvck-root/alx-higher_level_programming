@@ -34,7 +34,7 @@ class BaseGeometry:
         Returns:
           None
         """
-        if not (type(value) is int):
+        if not type(value) is int:
             raise TypeError(f"{name} must be an integer")
 
         if value <= 0:

@@ -10,9 +10,9 @@ Test 0: Import the ``1-my_list`` module
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 
-Test 1: Test subclass
->>> issubclass(MyList, list)
-True
+Test 1: Empty list
+>>> my_list.print_sorted()
+[]
 
 Test 2: Test instance
 >>> isinstance(my_list, list)
@@ -36,3 +36,7 @@ Test 5: Print my_list
 Test 6: Test len
 >>> len(my_list)
 5
+
+Test 7: Test subclass
+>>> issubclass(MyList, list)
+True
