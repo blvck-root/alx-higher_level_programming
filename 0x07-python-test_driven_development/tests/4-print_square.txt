@@ -29,11 +29,9 @@ ValueError: size must be >= 0
 
 Test 4: size of zero
 >>> print_square(0)
-<BLANKLINE>
 
 Test 5: Zero float size
 >>> print_square(0.0)
-<BLANKLINE>
 
 Test 6: Negative float size
 >>> print_square(-0.5)

@@ -41,7 +41,7 @@ def print_square(size):
 
     # square is a (size x size) grid made from the # character
     square = ""
-    for i in range(size):
+    for i in range(int(size)):
         square += "#" * size + "\n"
     if len(square) > 0:
         print(square, end="")
