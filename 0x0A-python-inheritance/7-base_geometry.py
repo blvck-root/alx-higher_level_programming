@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-
 """Geometry module.
 """
 
-
-class BaseGeometry:
+class BaseGeometry(object):
     """Template of BaseGeometry objects.
 
     Methods:
