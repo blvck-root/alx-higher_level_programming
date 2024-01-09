@@ -5,14 +5,14 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle class derived from BaseGeometry.
+    """Rectangle class is a subclass of BaseGeometry.
 
     Attributes:
       __width: private width attribute
       __height: private height attribute
     """
     def __init__(self, width, height):
-        """Instatiates the Rectangle class with width and height attributes
+        """Instatiates the Rectangle class
 
         Args:
           width: width of rectangle

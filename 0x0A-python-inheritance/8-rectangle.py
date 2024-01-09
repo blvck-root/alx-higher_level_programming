@@ -39,7 +39,7 @@ class BaseGeometry(object):
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle class derived from BaseGeometry.
+    """Rectangle class is a subbclass of BaseGeometry.
 
     Attributes:
       __width: private width attribute
