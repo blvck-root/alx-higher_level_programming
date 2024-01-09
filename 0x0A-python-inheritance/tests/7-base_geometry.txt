@@ -6,7 +6,7 @@ Test the integer_validator method
 ---------------------------------
 
 
-Test 0: Import the ``BaseGeometry`` class from ``7-base_geometry`` module
+Test 0: Get the ``BaseGeometry`` class of ``7-base_geometry`` module
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Test 1: Validate integer

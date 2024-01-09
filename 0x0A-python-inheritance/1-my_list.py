@@ -5,7 +5,7 @@
 
 
 class MyList(list):
-    """MyList is derived from the 'list' class.
+    """MyList is a subclass of the 'list' class.
 
     Methods:
       print_sorted: prints list items in sorted order
