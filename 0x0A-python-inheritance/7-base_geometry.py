@@ -2,6 +2,7 @@
 """Geometry module.
 """
 
+
 class BaseGeometry(object):
     """Template of BaseGeometry objects.
 

@@ -1,5 +1,8 @@
+#!/usr/bin/python3
+
 """Rectangle module.
 """
+
 
 class BaseGeometry(object):
     """Template of BaseGeometry objects.
