@@ -1,0 +1,63 @@
+=================================
+The ``5-text_indentation`` module
+=================================
+
+Test the ``text_indentation`` function
+--------------------------------------
+
+
+Test 0: Import ``text_indentation`` function from ``5-text_indentation`` module
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test 1: Print new line after .
+>>> text_indentation("Si id dicis, vicimus. Sin aliud quid voles, postea")
+Si id dicis, vicimus.
+<BLANKLINE>
+Sin aliud quid voles, postea
+
+Test 2: Print new line after ?
+>>> text_indentation("Si id dicis, vicimus? Sin aliud quid voles, postea")
+Si id dicis, vicimus?
+<BLANKLINE>
+Sin aliud quid voles, postea
+
+Test 3: Print new line after :
+>>> text_indentation("Si id dicis, vicimus: Sin aliud quid voles, postea")
+Si id dicis, vicimus:
+<BLANKLINE>
+Sin aliud quid voles, postea
+
+Test 4: Print string with delimeter at the end of the string
+>>> text_indentation("Si id dicis, vicimus. Sin aliud quid voles, postea?")
+Si id dicis, vicimus.
+<BLANKLINE>
+Sin aliud quid voles, postea?
+<BLANKLINE>
+
+Test 5: Print string with no delimiter `:`, `.`, or `?`
+>>> text_indentation("Si id dicis, vicimus! Sin aliud quid voles, postea")
+Si id dicis, vicimus! Sin aliud quid voles, postea
+
+Test 6: Print string with white space at the start
+>>> text_indentation("  Si id dicis, vicimus. Sin aliud quid voles, postea")
+Si id dicis, vicimus.
+<BLANKLINE>
+Sin aliud quid voles, postea
+
+Test 7: Print string with white space at the end
+>>> text_indentation("Si id dicis, vicimus. Sin aliud quid voles, postea ")
+Si id dicis, vicimus.
+<BLANKLINE>
+Sin aliud quid voles, postea
+
+Test 8: Print empty string
+>>> text_indentation("")
+
+Test 9: Print space
+>>> text_indentation(" ")
+
+Test 10: Missing argument
+>>> text_indentation()
+Traceback (most recent call last):
+  ...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
