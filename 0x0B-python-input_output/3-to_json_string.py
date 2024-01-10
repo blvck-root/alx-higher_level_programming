@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
 
 """
 The 3-to_json_string module contains the to_json_string function
 """
+import json
 
 
 def to_json_string(my_obj):
