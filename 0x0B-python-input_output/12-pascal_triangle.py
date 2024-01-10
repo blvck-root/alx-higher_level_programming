@@ -16,11 +16,11 @@ def pascal_triangle(n):
         if i == 0:
             res.append([1])
         elif i == 1:
-            res.append([1, 2, 1])
+            res.append([1, 1])
         else:
             prev_row = res[i - 1]
             curr_row = [1]
-            for j in range(i):
+            for j in range(i - 1):
                 curr_row.append(prev_row[j] + prev_row[j + 1])
             curr_row.append(1)
             res.append(curr_row)
