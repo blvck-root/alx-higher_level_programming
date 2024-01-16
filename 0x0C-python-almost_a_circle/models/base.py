@@ -42,7 +42,6 @@ class Base:
         with open(filename, 'w', encoding="utf-8") as file:
             json.dump(json.loads(data), file)
 
-
     @classmethod
     def load_from_file(cls):
         """Returns list of instances"""
