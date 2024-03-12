@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""The 1-write_file module containts the write_file function"""
+"""
+The 1-write_file module containts the write_file function
+"""
 
 
 def write_file(filename="", text=""):
