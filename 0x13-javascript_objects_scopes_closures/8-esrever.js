@@ -1,10 +1,10 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  let revArray = [];
+  const revArray = [];
 
-  for (let element of list) {
+  for (const element of list) {
     revArray.unshift(element);
   }
 
   return revArray;
-}
+};
